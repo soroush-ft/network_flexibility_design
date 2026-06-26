@@ -1,0 +1,145 @@
+{
+  "nodes": {
+    "plants": [
+      "1",
+      "2",
+      "3"
+    ],
+    "products": [
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  "profits": {
+    "1": {
+      "4": 7.0,
+      "5": 7.0,
+      "6": 7.0
+    },
+    "2": {
+      "4": 7.0,
+      "5": 7.0,
+      "6": 7.0
+    },
+    "3": {
+      "4": 7.0,
+      "5": 7.0,
+      "6": 7.0
+    }
+  },
+  "investment_costs": {
+    "1": {
+      "4": 100.0,
+      "5": 100.0,
+      "6": 100.0
+    },
+    "2": {
+      "4": 100.0,
+      "5": 100.0,
+      "6": 100.0
+    },
+    "3": {
+      "4": 100.0,
+      "5": 100.0,
+      "6": 100.0
+    }
+  },
+  "processing_times": {
+    "1": {
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "2": {
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    },
+    "3": {
+      "4": 1.0,
+      "5": 1.0,
+      "6": 1.0
+    }
+  },
+  "supply_uncertainty": {
+    "1": {
+      "dist": "normal",
+      "mean": 124.34094206360601,
+      "var": 251.8239268460533,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    },
+    "2": {
+      "dist": "normal",
+      "mean": 121.85247958157265,
+      "var": 112.39586760255047,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    },
+    "3": {
+      "dist": "normal",
+      "mean": 121.30400258782298,
+      "var": 127.72100096626717,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    }
+  },
+  "demand_uncertainty": {
+    "4": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 973.0058193607631,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    },
+    "5": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1351.8721330817746,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    },
+    "6": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1035.0739769751615,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    }
+  },
+  "plant_zones": {
+    "1": "1",
+    "2": "0",
+    "3": "1"
+  },
+  "product_tariffs": {
+    "4": {
+      "0": 0.0,
+      "1": 0.3
+    },
+    "5": {
+      "0": 0.0,
+      "1": 0.3
+    },
+    "6": {
+      "0": 0.0,
+      "1": 0.3
+    }
+  },
+  "sample_size": 1000,
+  "seed": 40,
+  "name": "40_(3,3)_s40_c86b"
+}

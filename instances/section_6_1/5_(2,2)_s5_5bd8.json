@@ -1,0 +1,99 @@
+{
+  "nodes": {
+    "plants": [
+      "1",
+      "2"
+    ],
+    "products": [
+      "3",
+      "4"
+    ]
+  },
+  "profits": {
+    "1": {
+      "3": 7.0,
+      "4": 7.0
+    },
+    "2": {
+      "3": 7.0,
+      "4": 7.0
+    }
+  },
+  "investment_costs": {
+    "1": {
+      "3": 100.0,
+      "4": 100.0
+    },
+    "2": {
+      "3": 100.0,
+      "4": 100.0
+    }
+  },
+  "processing_times": {
+    "1": {
+      "3": 1.0,
+      "4": 1.0
+    },
+    "2": {
+      "3": 1.0,
+      "4": 1.0
+    }
+  },
+  "supply_uncertainty": {
+    "1": {
+      "dist": "normal",
+      "mean": 122.85868641317823,
+      "var": 328.0321527280125,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    },
+    "2": {
+      "dist": "normal",
+      "mean": 136.84630840071767,
+      "var": 184.66509086356692,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    }
+  },
+  "demand_uncertainty": {
+    "3": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1275.6346276498846,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    },
+    "4": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 955.1501699560956,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    }
+  },
+  "plant_zones": {
+    "1": "1",
+    "2": "0"
+  },
+  "product_tariffs": {
+    "3": {
+      "0": 0.0,
+      "1": 0.3
+    },
+    "4": {
+      "0": 0.0,
+      "1": 0.3
+    }
+  },
+  "sample_size": 1000,
+  "seed": 5,
+  "name": "5_(2,2)_s5_5bd8"
+}

@@ -1,0 +1,119 @@
+{
+  "nodes": {
+    "plants": [
+      "1",
+      "2"
+    ],
+    "products": [
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  "profits": {
+    "1": {
+      "3": 7.0,
+      "4": 7.0,
+      "5": 7.0
+    },
+    "2": {
+      "3": 7.0,
+      "4": 7.0,
+      "5": 7.0
+    }
+  },
+  "investment_costs": {
+    "1": {
+      "3": 100.0,
+      "4": 100.0,
+      "5": 100.0
+    },
+    "2": {
+      "3": 100.0,
+      "4": 100.0,
+      "5": 100.0
+    }
+  },
+  "processing_times": {
+    "1": {
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0
+    },
+    "2": {
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0
+    }
+  },
+  "supply_uncertainty": {
+    "1": {
+      "dist": "normal",
+      "mean": 204.59837041272067,
+      "var": 515.1501060948403,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    },
+    "2": {
+      "dist": "normal",
+      "mean": 172.23118650424735,
+      "var": 274.4958144924421,
+      "mean_change": "linear",
+      "var_change": "constant",
+      "mean_tilt": 0.0162,
+      "var_tilt": 0
+    }
+  },
+  "demand_uncertainty": {
+    "3": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1395.889067379355,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    },
+    "4": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1783.1078887224553,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    },
+    "5": {
+      "dist": "normal",
+      "mean": 100.0,
+      "var": 1770.9719109114287,
+      "mean_change": "linear",
+      "var_change": "linear",
+      "mean_tilt": 1.0,
+      "var_tilt": 0.3333333333333333
+    }
+  },
+  "plant_zones": {
+    "1": "0",
+    "2": "1"
+  },
+  "product_tariffs": {
+    "3": {
+      "0": 0.0,
+      "1": 0.3
+    },
+    "4": {
+      "0": 0.0,
+      "1": 0.3
+    },
+    "5": {
+      "0": 0.0,
+      "1": 0.3
+    }
+  },
+  "sample_size": 1000,
+  "seed": 17,
+  "name": "17_(2,3)_s17_95ab"
+}
