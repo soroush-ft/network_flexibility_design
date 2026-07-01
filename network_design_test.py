@@ -1135,13 +1135,11 @@ class NetworkDesignProblem:
             f"Samp:{self.sample_size:<6} | "
         )
 
-        # --- Denominators (how many could exist) ---
+        # Total number of possible supply and demand distributions
         if self.endogenous_supply:
             if hasattr(self, "all_degree_combinations"):
-                # if you stored the *list* (legacy), use its length
                 all_degree_combinations = len(self.all_degree_combinations)
             else:
-                # count only, no enumeration
                 all_degree_combinations = (len(self.products) + 1) ** len(self.plants)
         else:
             all_degree_combinations = None  # not applicable
@@ -1154,11 +1152,11 @@ class NetworkDesignProblem:
         else:
             all_zone_assignments = None  # not applicable
 
-        # --- Numerators (how many you actually visited) ---
+        # Number of visited supply and demand distributions
         visited_supply_distributions = len(getattr(self, "visited_supply_distributions", []))
         visited_demand_distributions = len(getattr(self, "visited_demand_distributions", []))
 
-        # --- Safe ratios ---
+        # Ratios of visited distributions
         ratio_vis_sup = (
             visited_supply_distributions / all_degree_combinations
             if (all_degree_combinations is not None and all_degree_combinations > 0)
@@ -1261,13 +1259,11 @@ class NetworkDesignProblem:
         # timestamp
         ts = datetime.datetime.now().strftime("%m/%d %H:%M:%S")
 
-        # --- Denominators (how many could exist) ---
+        # Total number of possible supply and demand distributions
         if self.endogenous_supply:
             if hasattr(self, "all_degree_combinations"):
-                # if you stored the *list* (legacy), use its length
                 all_degree_combinations = len(self.all_degree_combinations)
             else:
-                # count only, no enumeration
                 all_degree_combinations = (len(self.products) + 1) ** len(self.plants)
         else:
             all_degree_combinations = None  # not applicable
@@ -1280,11 +1276,11 @@ class NetworkDesignProblem:
         else:
             all_zone_assignments = None  # not applicable
 
-        # --- Numerators (how many you actually visited) ---
+        # Number of visited supply and demand distributions
         visited_supply_distributions = len(getattr(self, "visited_supply_distributions", []))
         visited_demand_distributions = len(getattr(self, "visited_demand_distributions", []))
 
-        # --- Safe ratios ---
+        # Ratios of visited distributions
         ratio_vis_sup = (
             visited_supply_distributions / all_degree_combinations
             if (all_degree_combinations is not None and all_degree_combinations > 0)
